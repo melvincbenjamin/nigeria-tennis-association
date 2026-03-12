@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="w-full bg-green-900 text-gray-300">
+    <footer className="w-full bg-green-800 text-gray-300">
       
       {/* Content Container */}
       <div className="max-w-7xl mx-auto px-6 py-12 grid gap-10 md:grid-cols-4">
@@ -8,7 +8,7 @@ export default function Footer() {
         {/* Organization Info */}
         <div>
           <h2 className="text-xl font-bold text-white mb-4">
-            Lawn Tennis Association of Nigeria
+            Nigerian Diaspora Tennis Development Forum LCC
           </h2>
           <p className="text-sm leading-relaxed">
             Promoting and developing tennis across Nigeria by supporting

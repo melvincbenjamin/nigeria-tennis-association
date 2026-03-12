@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { NavLink } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import logo from "../assets/logo.jpeg"
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -9,6 +10,7 @@ export default function Navbar() {
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
+    { name: "Board", path: "/board"},
     { name: "Programs", path: "/programs" },
     { name: "History", path: "/history" },
     { name: "Hall of Fame", path: "/hall-of-fame" },
@@ -30,7 +32,11 @@ export default function Navbar() {
     <nav className="bg-white shadow-md w-full fixed top-0 z-50">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <div className="text-lg font-bold text-green-700">Nigeria Tennis</div>
+          {/* Logo + Site Name */}
+          <NavLink to="/" className="flex items-center gap-2">
+            <img src={logo} alt="Nigeria Tennis Logo" className="h-10 w-10 object-contain" />
+            <span className="text-sm font-bold text-green-700">Nigeria Tennis</span>
+          </NavLink>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8 font-medium">

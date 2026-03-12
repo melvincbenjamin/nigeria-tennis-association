@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Daniel from "../assets/Daniel-Adeleye.jpg";
+import aboutbg from "../assets/aboutbg2.avif";
 
 export default function About() {
   return (
@@ -10,7 +10,7 @@ export default function About() {
       <section className="relative w-full h-[60vh] md:h-[70vh]">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${Daniel})` }}
+          style={{ backgroundImage: `url(${aboutbg})` }}
         ></div>
 
         {/* Overlay with Motion */}
@@ -52,36 +52,64 @@ export default function About() {
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
 
           {/* Mission Card */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="bg-green-800 border-2 border-green-700 p-8 rounded-2xl shadow-lg text-center md:text-left transition hover:shadow-2xl"
-          >
-            <h3 className="text-2xl font-bold mb-4 text-white">Our Mission</h3>
-            <p className="text-white leading-relaxed">
-              To promote and develop tennis throughout Nigeria by providing 
-              accessible programs, professional coaching, and competitive 
-              opportunities for players of all ages.
-            </p>
-          </motion.div>
+<motion.div
+  initial={{ opacity: 0, x: -50 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.8 }}
+  className="bg-green-800 border-2 border-green-700 p-8 rounded-2xl shadow-lg text-center md:text-left transition hover:shadow-2xl"
+>
+  <h3 className="text-2xl font-bold mb-4 text-white">Our Mission</h3>
+
+  <p className="text-white leading-relaxed">
+    Our mission is to drive the growth and transformation of tennis in Nigeria
+    by building a strong foundation for the sport at every level. We are
+    committed to developing tennis through structured grassroots and
+    fundamental programs that introduce and nurture young talents across the
+    country.
+  </p>
+
+  <p className="text-white leading-relaxed mt-4">
+    We aim to revamp, reshape, and reposition Nigerian tennis by strengthening
+    the systems that support players, coaches, and competitions. This includes
+    establishing and supporting a sustainable coaching structure that empowers
+    coaches with the knowledge, resources, and opportunities needed to develop
+    world-class athletes.
+  </p>
+
+  <p className="text-white leading-relaxed mt-4">
+    Through the support of local tournaments, scholarship opportunities for
+    talented and deserving players, and welfare initiatives such as pension
+    support for retiring coaches, we remain committed to building a thriving
+    tennis ecosystem that inspires future generations and elevates Nigerian
+    tennis on the global stage.
+  </p>
+</motion.div>
 
           {/* Vision Card */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="bg-green-800 border-2 border-green-700 p-8 rounded-2xl shadow-lg text-center md:text-left transition hover:shadow-2xl"
-          >
-            <h3 className="text-2xl font-bold mb-4 text-white">Our Vision</h3>
-            <p className="text-white leading-relaxed">
-              To position Nigeria as a leading tennis nation in Africa and 
-              produce world-class players who compete and succeed on the 
-              international stage.
-            </p>
-          </motion.div>
+<motion.div
+  initial={{ opacity: 0, x: 50 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.8 }}
+  className="bg-green-800 border-2 border-green-700 p-8 rounded-2xl shadow-lg text-center md:text-left transition hover:shadow-2xl"
+>
+  <h3 className="text-2xl font-bold mb-4 text-white">Our Vision</h3>
+
+  <p className="text-white leading-relaxed">
+    Our vision is to establish Nigeria as a powerhouse of tennis in Africa
+    and a respected force on the global stage. We aspire to build a thriving
+    tennis ecosystem that consistently produces world-class players,
+    exceptional coaches, and internationally recognized competitions.
+  </p>
+
+  <p className="text-white leading-relaxed mt-4">
+    Through strategic development programs, strong grassroots structures,
+    and sustainable support systems, we envision a future where tennis is
+    widely accessible across Nigeria and where Nigerian athletes compete,
+    succeed, and inspire the world at the highest levels of the sport.
+  </p>
+</motion.div>
 
         </div>
       </section>
